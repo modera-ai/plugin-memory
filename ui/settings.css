@@ -1,0 +1,239 @@
+/* Memory uses the same surface and control tokens as other settings pages. */
+.memory-scope-panel {
+  margin-bottom: 16px;
+}
+.memory-scope {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--settings-border);
+  border-radius: 10px;
+  background: var(--settings-card);
+}
+.memory-scope .df-button {
+  border-color: transparent;
+  background: transparent;
+  text-align: left;
+  padding: 7px 14px;
+}
+.memory-scope .df-button[aria-pressed="true"] {
+  border-color: var(--settings-border);
+  background: var(--settings-surface);
+}
+.memory-scope strong,
+.memory-scope small {
+  display: block;
+}
+.memory-scope small {
+  color: var(--settings-muted);
+  font-size: 11px;
+  font-weight: 400;
+}
+.memory-learning-panel > .df-card,
+.memory-workspace {
+  padding: 18px 20px;
+  border: 1px solid var(--settings-border);
+  border-radius: 16px;
+  box-shadow: var(--settings-card-shadow);
+  background: var(--settings-card);
+  margin-bottom: 16px;
+}
+.memory-learning-panel > .df-card > .df-muted {
+  margin: 3px 0 16px;
+}
+.memory-option-group {
+  margin-top: 16px;
+}
+.memory-option-group h4 {
+  margin: 0;
+  padding: 0 0 6px;
+  color: var(--settings-muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+.memory-settings-option {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 156px;
+  align-items: center;
+  gap: 24px;
+  padding: 13px 0;
+  border-top: 1px solid var(--settings-border);
+}
+.memory-settings-option strong {
+  font-size: 13px;
+  font-weight: 550;
+}
+.memory-settings-option p.df-muted {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.memory-advanced {
+  margin-top: 16px;
+  border-top: 1px solid var(--settings-border);
+}
+.memory-advanced > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  cursor: pointer;
+  list-style: none;
+}
+.memory-advanced > summary::-webkit-details-marker {
+  display: none;
+}
+.memory-advanced > summary strong,
+.memory-advanced > summary small {
+  display: block;
+}
+.memory-advanced > summary small {
+  margin-top: 3px;
+  color: var(--settings-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+.memory-advanced > summary > span:last-child {
+  color: var(--settings-muted);
+  transition: transform 0.18s;
+}
+.memory-advanced[open] > summary > span:last-child {
+  transform: rotate(180deg);
+}
+.memory-advanced-content {
+  padding-bottom: 4px;
+}
+.memory-model-field {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+.memory-model-field > label {
+  display: grid;
+  gap: 6px;
+  width: min(100%, 400px);
+  font-size: 12px;
+  color: var(--settings-muted);
+}
+.memory-index-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.memory-primary-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--settings-border);
+}
+.memory-library > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--settings-border);
+}
+.memory-library h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 18px 0 8px;
+}
+.memory-record {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--settings-border);
+}
+.memory-record-body {
+  flex: 1;
+  min-width: 0;
+}
+.memory-record p {
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}
+.memory-record summary {
+  cursor: pointer;
+  color: var(--settings-muted);
+  font-size: 12px;
+}
+.memory-record-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.memory-record-actions summary {
+  list-style: none;
+}
+.memory-record-actions summary::-webkit-details-marker {
+  display: none;
+}
+.memory-record textarea {
+  min-height: 90px;
+  margin-bottom: 10px;
+}
+.memory-candidates {
+  padding: 0 14px;
+  background: var(--settings-surface);
+  border: 1px solid var(--settings-border);
+  border-radius: 8px;
+}
+.memory-candidates .memory-record:last-child {
+  border-bottom: 0;
+}
+.memory-log {
+  margin-top: 16px;
+  color: var(--settings-muted);
+  font-size: 12px;
+}
+.memory-log summary,
+.memory-maintenance > summary {
+  cursor: pointer;
+}
+.memory-maintenance {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--settings-border);
+  color: var(--settings-muted);
+}
+.memory-maintenance > div {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+.memory-maintenance .memory-log {
+  flex: 1;
+  min-width: 180px;
+  margin: 6px 0 0;
+}
+@media (max-width: 600px) {
+  .memory-settings-option {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .memory-settings-option select {
+    max-width: 180px;
+  }
+  .memory-record {
+    flex-wrap: wrap;
+  }
+  .memory-record-body {
+    flex-basis: 100%;
+  }
+  .memory-learning-panel > .df-card,
+  .memory-workspace {
+    padding: 16px;
+  }
+}

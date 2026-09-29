@@ -329,6 +329,12 @@ export const activate: PluginModule["activate"] = async host => {
         text: `[${record.scope}; ${await checkRecordDependencies(record, request) ? "dependency check passed or not applicable" : "STALE: dependency changed/missing; verify before using"}; source=${record.source}; updated=${record.updatedAt}] ${record.text}` })));
     } }],
     ui: [{ id: "modera.memory.panel", slot: "panel", icon: "box", requiredPermissions: permissions,
+      launcher: {
+        title: "Memory",
+        description: "Review and manage long-term memory",
+        icon: "box",
+        locales: { "zh-CN": { title: "记忆", description: "查看和管理长期记忆" } },
+      },
       actions: ["details", "addGlobal", "addProject", "confirm", "forget", "edit", "moveGlobal", "moveProject", "next", "previous", "history", "closeHistory", "draftSkill", "exportSkill", "closeDraft"],
       async act(action, context) {
         const database = db.scoped(AbortSignal.any([host.signal, context.signal]));

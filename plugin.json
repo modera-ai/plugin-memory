@@ -1,5 +1,6 @@
 {
   "apiVersion": 1,
+  "activationScope": "scoped",
   "id": "modera.memory",
   "name": "Memory",
   "version": "0.1.0",

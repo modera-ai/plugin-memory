@@ -9,16 +9,18 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "modera-plugin-build ."
+    "build": "modera-plugin-build .",
+    "pack": "modera-plugin pack .",
+    "release": "modera-plugin release . --publish"
   },
   "devDependencies": {
-    "@modera/plugin-build": "0.1.0",
-    "@modera/plugin-sdk": "0.1.0",
+    "@modera/plugin-build": "file:vendor/modera-plugin-build-0.1.0.tgz",
+    "@modera/plugin-sdk": "file:vendor/modera-plugin-sdk-0.1.0.tgz",
     "@types/better-sqlite3": "^9.6.0",
     "@types/react-dom": "^19.1.9"
   },
   "dependencies": {
-    "@modera/contracts": "0.1.0",
+    "@modera/contracts": "file:vendor/modera-contracts-0.1.0.tgz",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "zod": "^3.24.1"

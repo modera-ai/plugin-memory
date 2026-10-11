@@ -11,7 +11,8 @@
   "scripts": {
     "build": "modera-plugin-build .",
     "pack": "modera-plugin pack .",
-    "release": "modera-plugin release . --publish"
+    "release": "modera-plugin release . --publish",
+    "dev": "node tools/modera-dev.mjs"
   },
   "devDependencies": {
     "@modera/contracts": "file:vendor/modera-contracts-0.1.0.tgz",
@@ -21,7 +22,6 @@
     "@types/react-dom": "^19.1.9"
   },
   "dependencies": {
-    "@modera/contracts": "file:vendor/modera-contracts-0.1.0.tgz",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "zod": "^3.24.1"

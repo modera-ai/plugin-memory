@@ -25,12 +25,7 @@
     "runs.observe",
     "models.generate"
   ],
-  "extensions": [
-    "panel",
-    "settings",
-    "conversation.composer",
-    "window.overlay"
-  ],
+  "extensions": ["panel", "conversation.composer", "window.overlay", "settings"],
   "agentGuidance": "Use memory_manage to find prior preferences or project experience. Distinguish global and project scope. Agent-authored entries are candidates; do not claim they are confirmed facts. Never save credentials or temporary secrets.",
   "config": {
     "automaticLearning": {
@@ -262,5 +257,6 @@
       ],
       "title": "查阅项目历史对话"
     }
-  ]
+  ],
+  "contributions": ["contextProviders", "runCompleted", "sessionDeleted", "observationSchedule", "validateSkillSource"]
 }

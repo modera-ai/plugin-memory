@@ -1,5 +1,6 @@
 {
   "apiVersion": 1,
+  "workspaceTargets": ["local", "ssh"],
   "activationScope": "scoped",
   "id": "modera.memory",
   "name": "Memory",

@@ -4,7 +4,7 @@
   "activationScope": "scoped",
   "id": "modera.memory",
   "name": "Memory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "全局与项目记忆：来源、版本、检索及管理。",
   "locales": {
     "en": {
